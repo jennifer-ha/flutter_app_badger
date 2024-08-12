@@ -1,4 +1,3 @@
-package android
 group 'fr.g123k.flutterappbadge.flutterappbadger'
 version '1.0-SNAPSHOT'
 
@@ -9,11 +8,11 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.android.tools.build:gradle:8.1.0' // Zorg ervoor dat dit de nieuwste stabiele versie is
     }
 }
 
-rootProject.allprojects {
+allprojects {
     repositories {
         google()
         mavenCentral()
@@ -23,18 +22,20 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdk 34
+    compileSdkVersion 34
     namespace 'fr.g123k.flutterappbadge.flutterappbadger'
+
     defaultConfig {
         minSdkVersion 21
+        targetSdkVersion 34 // Voeg een target SDK-versie toe
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     lint {
         disable 'InvalidPackage'
     }
 }
 
 dependencies {
-    //noinspection GradleDependency
-    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar" // Overweeg om een alternatief te zoeken als deze verouderd is
 }
