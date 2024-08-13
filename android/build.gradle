@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.0' // Zorg ervoor dat dit de nieuwste stabiele versie is
+        classpath 'com.android.tools.build:gradle:8.5.0' // Zorg ervoor dat dit de nieuwste stabiele versie is
     }
 }
 
@@ -37,5 +37,5 @@ android {
 }
 
 dependencies {
-    implementation "me.leolin:ShortcutBadger:1.1.22@aar" // Overweeg om een alternatief te zoeken als deze verouderd is
+    implementation "me.leolin:ShortcutBadger:1.1.22@aar"
 }
