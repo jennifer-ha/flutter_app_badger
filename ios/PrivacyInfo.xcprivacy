@@ -2,8 +2,9 @@
 <array>
   <dict>
     <key>NSPrivacyAccessedAPICategory</key>
-    <string>NSPrivacyAccessedAPICategoryBadge</string>
+    <string>Notifications</string>
     <key>NSPrivacyAccessedAPIUsageDescription</key>
     <string>This app updates the app icon badge to notify you of new messages or events.</string>
   </dict>
 </array>
+
